@@ -1,0 +1,43 @@
+# NFT Minting API (Polygon Mumbai)
+
+
+## Setup
+
+
+### Install dependencies
+npm install
+cd backend && npm install
+
+
+### Configure .env
+RPC_URL=your_rpc_url
+PRIVATE_KEY=your_private_key
+CONTRACT_ADDRESS=deployed_contract_address
+
+
+### Deploy contract
+npx truffle migrate --reset --network development
+
+
+### Run backend
+cd backend
+npm start
+
+
+### API Usage
+POST http://localhost:3000/mint
+
+
+Body:
+{
+  "walletAddress": "0x..."
+}
+
+
+## Features
+- ERC721 NFT
+- Max supply limit
+- Secure minting
+- Node.js API integration
+
+
